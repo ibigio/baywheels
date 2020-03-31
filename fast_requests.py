@@ -45,27 +45,12 @@ from aiohttp import ClientSession
 # >     fastr.post('https://postman-echo.com/post', gen_data=gen_data, req_gen=req_gen, final_callback=print)
 # >         
 
-def get(
-    url,
-    params=None,
-    reps=1,
-    final_callback=None,
-    initial_callback=None,
-    kwargs_list=None,
-    **kwargs):
-    return request('get', url, params=params, reps=reps, final_callback=final_callback, initial_callback=initial_callback, kwargs_list=kwargs_list, **kwargs)
+def get(url, params=None, reps=1, **kwargs):
+    return request('get', url, **kwargs)
 
 
-def post(
-    url,
-    data=None,
-    json=None,
-    reps=1,
-    final_callback=None,
-    initial_callback=None,
-    kwargs_list=None,
-    **kwargs):
-    return request('post', url, data=data, json=json, reps=reps, final_callback=final_callback, initial_callback=initial_callback, kwargs_list=kwargs_list, **kwargs)
+def post(url, data=None, json=None, reps=1, **kwargs):
+    return request('post', url, **kwargs)
 
 
 def request(method, url, reps=1, final_callback=None, initial_callback=None, kwargs_list=None, **kwargs):
