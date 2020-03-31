@@ -3,13 +3,13 @@ Playing around with BayWheels (LyftBikes) API and other endpoints I found. Also 
 
 ## Files
 
-### BayWheels Client
+### `baywheels.py`: BayWheels Client
 Basic Python client for the BayWheels API (documented and otherwise).
 
-### Fast Requests
+### `fast_requests.py`: Fast Requests Library
 Tiny library for making super-fast batches of requets.
 
-### final.py
+### `final.py`
 Don't mind this file... Just playing around with the API and may have found something fun.
 
 ## Running
